@@ -73,6 +73,17 @@ export default function Flow() {
         return { textUpdater: TextUpdaterNode, AddNode: AddNode };
     }, [TextUpdaterNode, AddNode]);
 
+    const nodeColor = (node) => {
+        switch (node.type) {
+            case 'input':
+                return '#6ede87';
+            case 'output':
+                return '#6865A5';
+            default:
+                return '#ff0072';
+        }
+    };
+
     const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
     const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
 
@@ -92,7 +103,7 @@ export default function Flow() {
                 onConnect={onConnect}
             >
                 <Controls />
-                <MiniMap />
+                <MiniMap nodeColor={nodeColor} nodeStrokeWidth={3} zoomable pannable />
                 <Background variant="dots" gap={12} size={1} />
                 <DevTools />
             </ReactFlow>
