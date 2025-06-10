@@ -1,20 +1,20 @@
 {
-  "private": true,
-  "author": "mayong <v_bymyma@tencent.com>",
-  "scripts": {
-    "dev": "umi dev",
-    "build": "umi build",
-    "postinstall": "umi setup",
-    "setup": "umi setup",
-    "start": "npm run dev"
-  },
-  "dependencies": {
-    "@xyflow/react": "^12.6.4",
-    "umi": "^4.4.11"
-  },
-  "devDependencies": {
-    "@types/react": "^18.0.33",
-    "@types/react-dom": "^18.0.11",
-    "typescript": "^5.0.3"
-  }
+    "private": true,
+    "author": "mayong <v_bymyma@tencent.com>",
+    "scripts": {
+        "dev": "umi dev",
+        "build": "umi build",
+        "postinstall": "umi setup",
+        "setup": "umi setup",
+        "start": "npm run dev"
+    },
+    "dependencies": {
+        "@xyflow/react": "^12.6.4",
+        "umi": "^4.4.11"
+    },
+    "devDependencies": {
+        "@types/react": "^18.0.33",
+        "@types/react-dom": "^18.0.11",
+        "typescript": "^5.0.3"
+    }
 }
