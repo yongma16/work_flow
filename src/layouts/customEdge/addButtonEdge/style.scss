@@ -1,0 +1,17 @@
+.add-button-edge-panel-container {
+    position: absolute;
+    transform: translate(20px, -20px);
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    z-index: 1000;
+    .add-button-edge-panel {
+        text-align: center;
+        margin: 0 auto;
+        cursor: pointer;
+        border-radius: 5px;
+        outline-color: transparent;
+    }
+}

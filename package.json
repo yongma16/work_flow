@@ -9,7 +9,9 @@
         "start": "npm run dev"
     },
     "dependencies": {
+        "@dagrejs/dagre": "^1.1.4",
         "@xyflow/react": "^12.6.4",
+        "dagre": "^0.8.5",
         "umi": "^4.4.11"
     },
     "devDependencies": {
