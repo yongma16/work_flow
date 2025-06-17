@@ -149,7 +149,7 @@ export default function Flow() {
     }, [isRunLayoutedElements])
     // 初始化渲染完 执行布局
     useEffect(() => {
-        setIsRunLayoutedElements(true);
+        // setIsRunLayoutedElements(true);
     }, []);
 
     return (
@@ -165,6 +165,8 @@ export default function Flow() {
                 onInit={(instance) => {
                     console.log('onInit instance', instance);
                     CurReactFlowInstance.current = instance;
+                    // 初始化完成 
+                    setIsRunLayoutedElements(true);
                 }}
 
             >
